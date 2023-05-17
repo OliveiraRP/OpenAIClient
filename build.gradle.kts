@@ -23,6 +23,9 @@ kotlin {
         val jvmMain by getting {
             dependencies {
                 implementation(compose.desktop.currentOs)
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.6.4")
+                implementation("io.ktor:ktor-client-apache5:2.3.0")
+                implementation("com.aallam.openai:openai-client:3.2.3")
             }
         }
         val jvmTest by getting
